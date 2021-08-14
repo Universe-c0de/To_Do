@@ -1,0 +1,35 @@
+body {
+    width; 100%;
+    height: 100vh;
+    font-family: 'Kaushan Script', cursive;
+    background: url("../img/intro.jpg") center no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+h1 {
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 22px;
+}
+
+.fs-4 {
+    color: #ffffff;
+    padding: 15px 0 0 25px;
+    font-size: 40px!important;
+}
+
+img {
+    padding: 15px 0 0 25px;
+}
+
+.text-dark {
+    color: #ffffff!important;
+}
+
+.me-3 {
+    padding-top: 30px!important;
+    margin-right: 115px!important;
+}
