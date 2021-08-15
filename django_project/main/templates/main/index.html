@@ -5,16 +5,16 @@
 {% endblock %}
 
 {% block content %}
-    <h1>Главная старница</h1>
-    {% if tasks %}
-        {% for el in tasks %}
-            <div class="alert alert-warning mt-2">
-                <h3>{{ el.title }}</h3>
-                <p>{{ el.task }}</p>
-            </div>
-        {% endfor %}
-    {% else %}
-        <p> у нас нет записи</p>
-    {% endif %}
+    <h1 class="main_logo">Приведите все в порядок</h1>
+<!--    {% if tasks %}-->
+<!--        {% for el in tasks %}-->
+<!--            <div class="alert alert-warning mt-2">-->
+<!--                <h3>{{ el.title }}</h3>-->
+<!--                <p>{{ el.task }}</p>-->
+<!--            </div>-->
+<!--        {% endfor %}-->
+<!--    {% else %}-->
+<!--        <p> у нас нет записи</p>-->
+<!--{% endif %} -->
 {% endblock %}
 

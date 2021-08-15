@@ -9,6 +9,11 @@ body {
 
 h1 {
     margin-bottom: 25px;
+    color: #555555;
+}
+
+.main_logo {
+    color: #454545;
 }
 
 p {
@@ -19,6 +24,7 @@ p {
     color: #ffffff;
     padding: 15px 0 0 25px;
     font-size: 40px!important;
+    text-transform: uppercase!important;
 }
 
 img {
@@ -31,5 +37,5 @@ img {
 
 .me-3 {
     padding-top: 30px!important;
-    margin-right: 115px!important;
+    margin-right: 100px!important;
 }

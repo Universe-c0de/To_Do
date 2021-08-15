@@ -1,0 +1,45 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+
+{% block content %}
+
+    <h1>События</h1>
+    <br/>
+
+
+{% for event in event_list %}
+
+<div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+  <div class="card-header">
+      {{ event }}
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Местоположение:  {{ event.venue }}</h5>
+    <p class="card-text">
+
+        <ul>
+    <li>Дата:  {{ event.event_date }}</li>
+
+    <li>Сайт:  {{ event.venue.web }}</li>
+    <li>Тип:  {{ event.manager }}</li>
+    <li>Описание:  {{ event.description }}</li>
+        <li>Участники: <br/>
+        {% for user in event.attendees.all %}
+{{ user }}<br/>
+        {% endfor %}
+        </li>
+        </ul>
+
+    </p>
+  </div>
+</div>
+
+
+{% endfor %}
+
+
+{% endblock %}

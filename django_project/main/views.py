@@ -1,4 +1,4 @@
-from .models import Task
+from .models import Task, Event
 from .forms import TaskForm
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
@@ -45,6 +45,12 @@ def register_user(request):
     return render(request, 'authenticate/register_user.html', {
         'form':form,
     })
+
+
+def all_events(request):
+    event_list = Event.objects.all()
+    return render(request, 'main/event.html',
+                  {'event_list': event_list})
 
 
 def index(request):
