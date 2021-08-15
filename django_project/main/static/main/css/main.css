@@ -14,6 +14,7 @@ h1 {
 
 .main_logo {
     color: #454545;
+    font-size: uppercase;
 }
 
 p {
@@ -38,4 +39,8 @@ img {
 .me-3 {
     padding-top: 30px!important;
     margin-right: 100px!important;
+}
+
+card text-white bg-secondary mb-3 {
+    display: inline-block!important;
 }
