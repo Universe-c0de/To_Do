@@ -22,12 +22,13 @@
       <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
         <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'home' %}"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Главная страница</font></font></a>
           <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'create' %}"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Добавить задачу</font></font></a>
+          <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'about' %}"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Справка</font></font></a>
           {% if user.is_authenticated %}
                 <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'logout' %}"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Выход</font></font></a>
           {% else %}
+          <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'register_user' %}"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Регистрация</font></font></a>
                 <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'login' %}"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Авторизация</font></font></a>
           {% endif %}
-          <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'about' %}"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Справка</font></font></a>
 
       </nav>
     </div>
